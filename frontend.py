@@ -30,7 +30,7 @@ import sys
 import time
 
 REQUEST_CPUTIME_SEC = 1.0
-REQUEST_TIMEOUT_SEC = 5.0
+REQUEST_TIMEOUT_SEC = 9.0
 
 
 class CpuBurner(object):
@@ -72,7 +72,7 @@ class CpuBurner(object):
             return (500, "Request failed\n")
         else:
             end_time = self.get_walltime()
-            response = "Request kikidraka took %.2f walltime seconds\n" % (
+            response = "Request took %.2f walltime seconds\n" % (
                 end_time - start_time)
             return (200, response)
 
