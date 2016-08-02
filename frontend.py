@@ -72,7 +72,7 @@ class CpuBurner(object):
             return (500, "Request failed\n")
         else:
             end_time = self.get_walltime()
-            response = "Request took %.2f walltime seconds\n" % (
+            response = "%.2f\n" % (
                 end_time - start_time)
             return (200, response)
 
