@@ -69,7 +69,7 @@ class CpuBurner(object):
         if p.is_alive():
             p.terminate()
         if p.exitcode != 0:
-            return (500, "Request failed\n")
+            return (500, 999)
         else:
             end_time = self.get_walltime()
             response = "%.2f\n" % (
