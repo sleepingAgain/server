@@ -30,7 +30,7 @@ import sys
 import time
 
 REQUEST_CPUTIME_SEC = 1.0
-REQUEST_TIMEOUT_SEC = 300
+REQUEST_TIMEOUT_SEC = 10
 
 
 class CpuBurner(object):
