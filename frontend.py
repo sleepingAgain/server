@@ -103,5 +103,5 @@ class DemoHttpServer(SocketServer.ThreadingMixIn,
 
 
 if __name__ == "__main__":
-    httpd = DemoHttpServer(("", 80), DemoRequestHandler)
+    httpd = DemoHttpServer(("", 9000), DemoRequestHandler)
     httpd.serve_forever()
